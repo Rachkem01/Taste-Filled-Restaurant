@@ -1,0 +1,741 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap');
+
+*{
+     margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size: 62.5%;
+    
+ 
+
+}
+
+.navbar-brand h3{
+font-size: 5em!important;
+}
+.icon{
+    aspect-ratio: 3/4;
+    width:70px;
+    height: 50px;
+}
+
+.navbar{
+    background-color: #0a0a23!important;
+    font-size: 2em;
+    display: flex; 
+  padding-left: 20px!important;
+  width:100%;
+ 
+ 
+
+}
+.navbar-brand{
+ color: #fff!important;
+ /* margin-left: -300px!important; */
+}
+
+.navbar-brand span{
+    color: #f4d35e;
+    font-weight: bold;
+    font-size: 3rem;
+    vertical-align: baseline;
+}
+.navbar-toggler-icon{
+    background-color: #fff;
+    
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+#bag{
+    padding-right: 20px;
+}
+
+
+button{
+    background-color: black;
+}
+
+
+
+.navbar-toggler{
+    display: flex!important;
+    align-items: flex-start!important;
+}
+i{
+   color:#f4d35e;
+   margin-left: 10px;
+}
+
+
+#offcanvas {
+    height: 100vh;
+    padding: 5px 6px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: grey;
+    /* scrollbar-width: thin; */
+   
+    border-radius: 10px;
+  }
+
+  #offcanvas::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+
+  .offcanvas::-webkit-scrollbar-track {
+    background:transparent;
+
+  }
+
+  #offcanvas::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  #offcanvas a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    word-spacing: 5px;
+    line-height: 2.0;
+  }
+  #offcanvas li{
+padding-left: 20px;
+padding-bottom: 20px;
+
+  }
+
+.btn-primary{
+  background-color: transparent!important;
+  border: none!important;
+}
+figure{
+   flex-basis: 100vw; 
+   flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  min-height: 50vh;
+   cursor: pointer;
+   
+ 
+  
+ 
+ 
+}
+
+figure img{
+  width: 100%;
+   aspect-ratio: 3/4; 
+   filter: contrast(0.2);
+  position: absolute;
+   height: 50vh;
+   
+  
+}
+ 
+
+#ImgSlide{
+  position: relative;
+  display: flex;
+  width: 100%;
+
+
+}
+
+
+
+
+
+.imgText{
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  font-size: 3em;
+  font-weight: bold;
+  color: #03045e;
+}
+.imgText button{
+  background-color: transparent;
+  border: none;
+  color: navy;
+
+}
+.menu{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  margin-left: 30%;
+  font-size: 1.6em;
+  line-height: 1.2;
+}
+
+.menu i{
+ color:#fff;
+ font-size: 4rem;
+ background-color: #f4d35e;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ border: 6px double #fff;
+ text-align: center;
+ padding-top: 10px;
+ 
+}
+.menubar{
+  background-color: yellow;
+  color: yellow;
+}
+.menu h3{
+  font-weight: 400;
+}
+.overlay{
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0,0,0,0.7);
+}
+.menu p{
+  width: 30%;
+}
+.hours{
+  font-size: 2.2em;
+  background-image: url("fruits.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+ 
+  height: 50vh;
+  background-color: rgba(0,0,0,.67);
+  background-blend-mode: overlay;
+  text-align: center;
+  color: #fff;
+
+}
+
+.hoursT{
+   padding-top: 1%; 
+}
+.hoursT h5{
+  font-size: 2em;
+ 
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}
+.hoursT i{
+  font-size: 2em;
+  
+}
+.hour-border{
+  word-spacing: 5px;
+  line-height: 1.5;
+  border: 2px solid white;
+  width: 60%;
+  margin: 10px auto;
+  font-size: 1.2em;
+}
+
+#card{
+  font-size: 1.5em!important;
+  text-align: center!important;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+
+}
+#card div{
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .14), 
+  0 1px 5px 0 rgba(0, 0, 0, .12), 
+  0 0 1px -2px rgba(0, 0, 0, .2);
+  border: none;
+  outline: none;
+}
+#card button{
+  background-color: #f4d35e;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.menudisplay{
+  display: flex;
+  flex-direction: row;
+  
+}
+.menuSpacing{
+  text-align: center;
+  position: relative;
+  left: 40%;
+}
+.title-menu h4{
+  font-size: 5em;
+ 
+    font-family: "Sevillana", cursive;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+
+  
+}
+.title-menu i{
+  font-size: 5em;
+  text-align: center;
+}
+.title-menu{
+  text-align: center;
+}
+.menudisplay button{
+  color:black!important;
+  background-color: transparent!important;
+}
+
+#testimonial img{
+  filter: contrast(1);
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  clip-path: circle();
+  position: absolute;
+  left: 35%;
+ 
+
+}
+
+#testimonial{
+  text-align: center;
+  font-size: 1.6em;
+  color: gray;
+  background-color: rgb(211, 204, 204);
+  width: 100%;
+  height: 50vh;
+}
+#testimonial .title h5{
+  font-size: 5em;
+ color: black;
+    font-family: "Sevillana", cursive;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+#testimonial i{
+  font-size: 2.5em;
+
+}
+#testimonial .title{
+  padding-top: 20px;
+}
+
+#testimonial .carousel-item{
+  width: 100%;
+}
+
+.Contact i{
+color:white;
+width: 30px;
+height: 30px;
+clip-path: circle();
+text-align: center;
+padding: 5px;
+padding-top: 8px;
+position: relative;
+margin-left: 2px;
+
+}
+.Contact .fa-facebook-f{
+  background-color: rgb(117, 117, 225);
+
+}
+
+.Contact .fa-twitter{
+  background-color: blue;
+}
+.Contact .fa-instagram{
+  background-color: tomato;
+}
+.Contact .fa-youtube{
+background-color: red;
+}
+.Contact .fa-linkedin-in{
+  background-color: navy;
+}
+.imgcontact{
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+  
+}
+.Contact{
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #000;
+  color: #fff;
+}
+.divider{
+  border-bottom: 1px solid #888989;
+  margin-bottom: 10px;
+  width: 80%;
+  position: relative;
+  left: 8%;
+}
+#accordion{
+  /* margin: 100px auto;
+  width: 600px; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2px;
+
+}
+
+#accordion li{
+  list-style: none;
+  /* width: 100%; */
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding:10px;
+  
+}
+
+#accordion li label{
+  padding: 10px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color:#0093E9;
+
+}
+
+#accordion li label span{
+  transform: rotate(90deg);
+  font-size: 20px;
+  color: #0093E9;
+}
+
+#accordion label + input[type="radio"]{
+  display: none;
+}
+
+#accordion .content{
+  padding:0 10px;
+  line-height: 26px;
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition:  max-height 0.5s;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .14), 
+  0 1px 5px 0 rgba(0, 0, 0, .12), 
+  0 0 1px -2px rgba(0, 0, 0, .2);
+}
+
+#accordion label + input[type="radio"]:checked + .content{
+  max-height: 700px;
+  max-width: 700px;
+}
+
+.arrow-left{
+  /* padding-left: 20px; */
+  color: #f4d35e;
+  font-weight: bold;
+  align-items: end;
+  font-size: 1.4em;
+  position: relative;
+  left: 60%;
+}
+
+.Categories{
+  display: flex;
+  flex-direction: column;
+position: absolute;
+list-style: none;
+visibility: hidden;
+height: 0;
+
+
+}
+
+.Categories.active{
+  position: static;
+  height: auto;
+  visibility: visible;
+}
+
+.Blog{
+ 
+position: absolute;
+list-style: none;
+visibility: hidden;
+height: 0;
+
+
+}
+
+.Blog.active{
+  position: static;
+  height: auto;
+  visibility: visible;
+}
+
+
+
+
+.Pages{
+ 
+  position: absolute;
+  list-style: none;
+  visibility: hidden;
+  height: 0;
+  
+  
+  }
+  
+  .Pages.active{
+    position: static;
+    height: auto;
+    visibility: visible;
+  }
+#bags{
+  background-color: #f4d35e;
+  color: #fff;
+  border-radius: 50%;
+ text-align: center;
+ /* padding-left: 15px; */
+border: none;
+outline: none;
+  width: 20px;
+  height: 25px;
+  position: relative;
+  font-size: 1.0em;
+  font-weight: bold;
+ margin-left: -10%;
+vertical-align: super;
+
+ 
+  
+
+}
+ .fa-shopping-bag{
+  color: #fff;
+  margin-left: 100px;
+}
+#cart img{
+  height: 50px;
+}
+
+.food1b{
+  display: flex;
+  flex-direction: column;
+
+}
+.drink1b{
+  display: flex;
+  flex-direction: column;
+ 
+}
+#cart ul{
+list-style: none;
+}
+
+/* #cart .divider{
+  width: 500px;
+  height: -2px;
+
+} */
+#cart button{
+  background-color: #f4d35e;
+  color: rgb(234, 239, 243);
+  border: none;
+  outline: none;
+  width: auto;
+  font-weight: bold;
+  font-size: 1.4em;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+}
+#cart{
+  font-size: 1.3em;
+  text-align: center;
+  overflow-x: hidden;
+}
+#cart li{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(241, 231, 231);
+  margin-bottom: 10px;
+}
+html{
+  overflow-x: hidden;
+  margin: -10px;
+  
+}
+.accordion-title h5{
+  font-size: 5em;
+  color: black;
+     font-family: "Sevillana", cursive;
+     font-weight: normal;
+     font-style: normal;
+     text-align: center;
+}
+.accordion-title i{
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+}
+.accordion-title{
+  text-align: center;
+  margin-top: 30px;
+}
+@media (max-width:400px) and (max-width:767px){
+ 
+ .icon{
+  width: 50px;
+  height: 40px;
+ }
+ .menu p{
+ width: 80%;
+ }
+ .menu{
+  margin-left: 10%;
+ }
+ #card{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+ }
+ #card img{
+  width: 120px;
+ 
+ }
+ #accordion label + input[type="radio"]:checked + .content{
+  max-height: 1000px;
+  max-width: 400px;
+ 
+}
+#testimonial img{
+  left: 10%;
+  top: 20%;
+margin-bottom: 20px;
+}
+.Contact{
+ 
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+}
+#testimonial{
+  height: 55vh;
+}
+#testimonial p{
+  width: 90%;
+}
+.imgcontact{
+  padding-bottom: 10px;
+}
+}
+@media (max-width:800px) and (max-width:1000px){
+ 
+ .icon{
+  width: 50px;
+  height: 40px;
+ }
+ .menu p{
+ width: 80%;
+ }
+ .menu{
+  margin-left: 10%;
+ }
+ #card{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+   }
+   #card img{
+    width: 120px;
+   
+   }
+   #accordion label + input[type="radio"]:checked + .content{
+    max-height: 1000px;
+    
+   
+  }
+#testimonial img{
+  left: 10%;
+  top: 20%;
+margin-bottom: 20px;
+}
+.Contact{
+ 
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+}
+#testimonial{
+  height: 55vh;
+}
+#testimonial p{
+  width: 90%;
+}
+.imgcontact{
+  padding-bottom: 10px;
+}
+}
+@media (min-width:1000px) and (max-width:1200px){
+ 
+ .icon{
+  width: 50px;
+  height: 40px;
+ }
+ .menu p{
+ width: 80%;
+ }
+ .menu{
+  margin-left: 10%;
+ }
+ #card{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+   }
+   #card img{
+    width: 120px;
+   
+   }
+   #accordion label + input[type="radio"]:checked + .content{
+    max-height: 1000px;
+    
+   
+  }
+#testimonial img{
+  left: 10%;
+  top: 25%;
+margin-bottom: 20px;
+}
+.Contact{
+ 
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+}
+#testimonial{
+  height: 55vh;
+}
+#testimonial p{
+  width: 90%;
+}
+.imgcontact{
+  padding-bottom: 10px;
+}
+}
+

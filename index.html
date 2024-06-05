@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taste Filled Restaurant">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="C:\Users\AGUNLOKO RACHAEL\Desktop\WEB CHALLENGES\index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ 
+    <title>Taste Filled Restaurant</title>
+    
+</head>
+<body>
+  <main class="container-fluid">
+    <div>
+      
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="navbar-toggler-icon"></span></button>
+           
+          
+          <a class="navbar-brand" href="#"><h3 class="Title"><span>T</span>aste<span>F</span>illed</a>
+            <img src="Taste filledIcon.png" alt="icon" class="icon"></h3>
+            <div>            
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart" aria-controls="offcanvasScrolling"><i class="fa fa-shopping-bag" aria-hidden="true" class="bag"></i>
+            <button type="button" id="bags">2</button></button></div>
+
+            <!-- </div> -->
+             
+            </div>
+            </nav>
+    </div>
+
+    <div class="OffCanvas  active">
+      
+
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="cart" aria-labelledby="cartLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="cartLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body active" >
+       <ul id="cart" class="list active">
+          <li>
+           
+              <img src="https://rabonadev.com/delicious/img/cart1.png">
+              <div class="food1b">
+              <p>Food Title</p>
+              <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+              <p>$20.00</p>
+          
+             </div>
+          </li>
+          <!-- <div class="divider"></div> -->
+          <li>
+            
+              <img src="https://rabonadev.com/delicious/img/cart2.png">
+              <div class="drink1b">
+              <p>Drink Title</p>
+              <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+              <p>$10.00</p>
+            
+             </div></li>
+             <!-- <div class="divider"></div> -->
+             <button>View Cart</button>
+             <button>Reservation</button>
+            
+             
+          
+          <div></div></ul></div></div>
+    
+    <div class="OffCanvas active">
+      
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body active" >
+ <ul id="offcanvas" class="list active">
+    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+    <li id="categories"><a href="#" class="categories" ><i class="fa fa-address-card" aria-hidden="true"></i></i> Categories<span class="arrow-left">&#x3e;</span>    
+      <ul class="Categories">
+        <li><a href="#card">Categories</a></li>
+        <li><a href="#card">Pizza</a></li>
+        <li><a href="#card">Sushi</a></li>
+        <li><a href="#card">Food</a></li>
+        <li><a href="#card">Drink</a></li>
+
+      </ul>
+
+    </a></li>
+
+
+    <li><a href="#"><i class="fa fa-spoon" aria-hidden="true"></i> Chef</a></li>
+    <li><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i>  Menu</a></li>
+    <li><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i > Menu List</a></li>
+    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Products</a></li>
+    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Shopping Cart</a></li>
+    <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Reservation</a></li>
+    <li id="blog"><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i> Blog <span class="arrow-left">&#x3e;</span>
+      <ul class="Blog">
+        <li><a>Blog</a></li>
+        <li><a>Blog Single</a></li>
+      </ul>
+    </a>
+    </li>
+    <li id="pages"><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> Pages<span class="arrow-left">&#x3e;</span>
+      <ul class="Pages">
+        <li><a>Faq</a></li>
+        <li><a>Testimonial Page</a></li>
+        <li><a>404 Page</a></li>
+      </ul></a></li>
+    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></i> Contact us</a></li>
+    <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log In</a></li>
+    <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>  Register</a></li>
+ </ul>
+  </div>
+</div>
+
+    </div>
+
+
+ 
+    
+    <div id="ImgSlide" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+      
+  <figure class="Scroll1">
+    <img src="imgContainer1.jpg" alt="img" class="imgC1"/>
+  <div class="imgText">
+    <h4>Delicious Food & Drink</h4>
+      <p>Find your need now</p>
+      <button>Shop Now</button> </div></figure> </div>
+   
+  
+  
+
+  <div class="carousel-item " data-bs-interval="5000">
+  <figure class="Scroll2">    
+ <img src="imgContainer2.jpg" alt="img" class="=imgC2"/>
+    <div class="imgText"> <h4>Cafe & Restaurant</h4>
+      <p>Find your need now</p>
+      <button>Shop Now</button></div></figure> </div>
+  <div class="carousel-item " data-bs-interval="5000">
+    <figure class="Scroll3"><img src="imgContainer4.jpg" alt="img" class="imgC3"/>
+      <div class="imgText">
+      <h4>Delicious & Tasteful</h4>
+      <p>Find your need now</p>
+      <button>Shop Now</button></figure></div></div> 
+      
+  </div>
+
+   
+  </div>
+
+  <div class="menu">
+       
+    <div>
+    <i class="fa fa-cutlery" aria-hidden="true"></i>
+    <h3>Master Chef</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+ 
+  </div>
+  <div>
+    <i class="fa fa-list-ul" aria-hidden="true"></i >
+      <h3>Many Menu</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+  
+  <div><i class="fa fa-cake" aria-hidden="true"></i>
+    <h3>Food Cake</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+  <div>
+    <i class="fa fa-coffee" aria-hidden="true"></i>
+    <h3>Juice Drink</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+    
+</div>
+  
+<div class="hours">
+  <div class="hoursT">
+  <h5>Open Hours</h5>
+  <i class="fa fa-snowflake" aria-hidden="true"></i>
+  <div class="hour-border">
+      <div>Monday - Saturday</div>
+      <div>7:00am -8:00am</div>
+      <div>Sunday</div>
+      <div>Open for 24 hours</div>
+  </div>
+</div></div>
+
+</div>
+
+<div class="accordion-title">
+  <h5>Special Menu</h5>
+  <i class="fa fa-snowflake" aria-hidden="true"></i>
+</div>
+<ul class="container-fluid" id="accordion">
+  <li>
+      <label for="first">Sushi
+          <!-- <span>&#x3e;</span> -->
+      </label>
+      <input type="radio" name="accordion" id="first" checked/>
+      <div class="content">
+        <div id="card">
+          <div class="sushiC1">
+           <img src="https://rabonadev.com/delicious/img/sushi1.png">
+           <p>Sushi Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="sushiC2">
+           <img src="https://rabonadev.com/delicious/img/sushi2.png">
+           <p>Sushi Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="=sushiC3">
+           <img src="https://rabonadev.com/delicious/img/sushi3.png">
+           <p>Sushi Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="sushiC4">
+           <img src="https://rabonadev.com/delicious/img/sushi4.png">
+           <p>Sushi Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+         </div>
+      </div>
+  </li>
+
+  <li>
+      <label for="second">Pizza
+          <!-- <span>&#x3e;</span> -->
+      </label>
+      <input type="radio" name="accordion" id="second" />
+      <div class="content">
+        <div id="card">
+          <div class="pizzaC1">
+           <img src="https://rabonadev.com/delicious/img/pizza1.png">
+           <p>Pizza Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="pizzaC2">
+           <img src="https://rabonadev.com/delicious/img/pizza2.png">
+           <p>Pizza Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="=pizzaC3">
+           <img src="https://rabonadev.com/delicious/img/pizza3.png">
+           <p>Pizza Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="pizzaC4">
+           <img src="https://rabonadev.com/delicious/img/pizza4.png">
+           <p>Pizza Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+         </div>
+      </div>
+  </li>
+
+  <li>
+    <label for="third">Food
+        <!-- <span>&#x3e;</span> -->
+    </label>
+    <input type="radio" name="accordion" id="third" />
+    <div class="content">
+      <div id="card">
+        <div class="foodC1">
+         <img src="https://rabonadev.com/delicious/img/food1.png">
+         <p>food Title</p>
+         <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+         <p>$28</p>
+         <button>Add To Cart</button>
+        </div>
+        <div class="foodC2">
+         <img src="https://rabonadev.com/delicious/img/food2.png">
+         <p>Food Title</p>
+         <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+         <p>$28</p>
+         <button>Add To Cart</button>
+        </div>
+        <div class="=foodC3">
+         <img src="https://rabonadev.com/delicious/img/food3.png">
+         <p>Food Title</p>
+         <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+         <p>$28</p>
+         <button>Add To Cart</button>
+        </div>
+        <div class="foodC4">
+         <img src="https://rabonadev.com/delicious/img/food4.png">
+         <p>Food Title</p>
+         <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+         <p>$28</p>
+         <button>Add To Cart</button>
+        </div>
+       </div>
+    </div>
+</li>
+  <li>
+      <label for="fourth">Drink
+          <!-- <span>&#x3e;</span> -->
+      </label>
+      <input type="radio" name="accordion" id="fourth"/>
+      <div class="content">
+        <div id="card">
+          <div class="drinkC1">
+           <img src="https://rabonadev.com/delicious/img/drink1.png">
+           <p>Drink Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="drinkC2">
+           <img src="https://rabonadev.com/delicious/img/drink2.png">
+           <p>Drink Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="=drinkC3">
+           <img src="https://rabonadev.com/delicious/img/drink3.png">
+           <p>Drink Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+          <div class="drinkC4">
+           <img src="https://rabonadev.com/delicious/img/drink4.png">
+           <p>Drink Title</p>
+           <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+           <p>$28</p>
+           <button>Add To Cart</button>
+          </div>
+      </div>
+  </li>
+</ul>
+
+
+<!-- <div class="title-menu">
+  <h4>Special Menu</h4>
+  <i class="fa fa-snowflake" aria-hidden="true"></i>
+</div>
+<section class="menudisplay">
+  
+  <div class="menuSpacing">
+    
+  <p class="d-inline-flex gap-1">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sushiContent" aria-expanded="false" aria-controls="sushiContent">
+      Sushi
+    </button>
+  
+  </p>
+
+  <div class="collapse" id="sushiContent">
+    <div class="card card-body" id="card-body2">
+     <div class="sushiC1">
+      <img src="https://rabonadev.com/delicious/img/sushi1.png">
+      <p>Sushi Title</p>
+      <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+      <p>$28</p>
+      <button>Add To Cart</button>
+     </div>
+     <div class="sushiC2">
+      <img src="https://rabonadev.com/delicious/img/sushi2.png">
+      <p>Sushi Title</p>
+      <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+      <p>$28</p>
+      <button>Add To Cart</button>
+     </div>
+     <div class="=sushiC3">
+      <img src="https://rabonadev.com/delicious/img/sushi3.png">
+      <p>Sushi Title</p>
+      <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+      <p>$28</p>
+      <button>Add To Cart</button>
+     </div>
+     <div class="sushiC4">
+      <img src="https://rabonadev.com/delicious/img/sushi4.png">
+      <p>Sushi Title</p>
+      <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+      <p>$28</p>
+      <button>Add To Cart</button>
+     </div>
+    </div></div></div>
+
+<div class="menuSpacing">
+    <p class="d-inline-flex gap-1">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pizzaContent" aria-expanded="false" aria-controls="pizzaContent">
+        Pizza
+      </button>
+    </p>
+  
+    <div class="collapse" id="pizzaContent">
+      <div class="card card-body" id="card-body2">
+       <div class="pizzaC1">
+        <img src="https://rabonadev.com/delicious/img/pizza1.png">
+        <p>Pizza Title</p>
+        <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+        <p>$28</p>
+        <button>Add To Cart</button>
+       </div>
+       <div class="pizzaC2">
+        <img src="https://rabonadev.com/delicious/img/pizza2.png">
+        <p>Pizza Title</p>
+        <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+        <p>$28</p>
+        <button>Add To Cart</button>
+       </div>
+       <div class="=pizzaC3">
+        <img src="https://rabonadev.com/delicious/img/pizza3.png">
+        <p>Pizza Title</p>
+        <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+        <p>$28</p>
+        <button>Add To Cart</button>
+       </div>
+       <div class="pizzaC4">
+        <img src="https://rabonadev.com/delicious/img/pizza4.png">
+        <p>Pizza Title</p>
+        <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+        <p>$28</p>
+        <button>Add To Cart</button>
+       </div>
+      </div></div></div></div>
+
+      <div class="menuSpacing">
+      <p class="d-inline-flex gap-1">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#foodContent" aria-expanded="false" aria-controls="foodContent">
+          Food
+        </button>
+      </p>
+      <div class="collapse" id="foodContent">
+        <div class="card card-body" id="card-body2">
+         <div class="foodC1">
+          <img src="https://rabonadev.com/delicious/img/food1.png">
+          <p>Food Title</p>
+          <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+          <p>$28</p>
+          <button>Add To Cart</button>
+         </div>
+         <div class="foodC2">
+          <img src="https://rabonadev.com/delicious/img/food2.png">
+          <p>Food Title</p>
+          <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+          <p>$28</p>
+          <button>Add To Cart</button>
+         </div>
+         <div class="=foodC3">
+          <img src="https://rabonadev.com/delicious/img/food3.png">
+          <p>food Title</p>
+          <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+          <p>$28</p>
+          <button>Add To Cart</button>
+         </div>
+         <div class="foodC4">
+          <img src="https://rabonadev.com/delicious/img/food4.png">
+          <p>Food Title</p>
+          <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+          <p>$28</p>
+          <button>Add To Cart</button>
+         </div>
+        </div></div></div></div>
+
+        <div class="menuSpacing">
+        <p class="d-inline-flex gap-1">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#drinkContent" aria-expanded="false" aria-controls="drinkContent">
+            Drink
+          </button>
+        </p>
+        <div class="collapse" id="drinkContent">
+          <div class="card card-body" id="card-body2">
+           <div class="drinkC1">
+            <img src="https://rabonadev.com/delicious/img/drink1.png">
+            <p>Drink Title</p>
+            <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            <p>$28</p>
+            <button>Add To Cart</button>
+           </div>
+           <div class="drinkC2">
+            <img src="https://rabonadev.com/delicious/img/drink2.png">
+            <p>Drink Title</p>
+            <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            <p>$28</p>
+            <button>Add To Cart</button>
+           </div>
+           <div class="=drinkC3">
+            <img src="https://rabonadev.com/delicious/img/drink3.png">
+            <p>Drink Title</p>
+            <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            <p>$28</p>
+            <button>Add To Cart</button>
+           </div>
+           <div class="drinkC4">
+            <img src="https://rabonadev.com/delicious/img/drink4.png">
+            <p>Drink Title</p>
+            <p><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+            <p>$28</p>
+            <button>Add To Cart</button>
+           </div>
+          </div></div>
+        
+
+        </div>
+       </div>
+  
+  </div>
+
+</section> -->
+
+     
+<div id="testimonial" class="carousel slide" data-bs-ride="carousel">
+  <div class="title">
+    <h5>Testimonial</h5>
+    <i class="fa fa-snowflake"></i></div>
+    
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+  
+      <div class="testimonial1">
+        <figure>
+         <div class="imgtext">
+       
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, consectetur sit. Sequi, accusantium. Rerum ratione consequuntur rem doloribus, dicta adipisci.</p>
+      <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+      <caption>
+      <p>Miss Water</p>
+      <p>An Accountant</p></caption></div></figure>
+      </div></div>
+    
+
+
+
+
+<div class="carousel-item " data-bs-interval="5000">
+  <div class="testimonial2">
+    <figure> 
+      <div class="imgtext">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, consectetur sit. Sequi, accusantium. Rerum ratione consequuntur rem doloribus, dicta adipisci.</p>
+    <img src="https://images.pexels.com/photos/4947563/pexels-photo-4947563.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <caption>
+    <p>Mr Wise</p>
+    <p>Software Developer</p></caption>
+    </div></figure></div></div>
+
+    <div class="carousel-item " data-bs-interval="5000">
+    <div class="testimonial3">
+      <figure><div class="imgtext">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, consectetur sit. Sequi, accusantium. Rerum ratione consequuntur rem doloribus, dicta adipisci.</p>
+      <img src="https://images.pexels.com/photos/20391719/pexels-photo-20391719/free-photo-of-woman-sitting-at-the-restaurant-table.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <caption>
+      <p>Miss  Food</p>
+      <p>Food Blogger</p></caption> </div></figure> 
+      </div></div>
+    </div>
+  </div>
+
+  <div class="Contact">
+    <h6>Find & Follow Us</h6>
+    <div class="imgcontact">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+    <p>Tel:080100111222</p>
+    <p>Fax: 050000000</p>
+    <p>Email:username@gmail.com</p>
+  
+  <div class="divider"></div>
+  <p>&copy; 2024 All Rights Reserved</p>
+  </div></div>
+
+</body>
+
+  </main>
+  <script src="C:\Users\AGUNLOKO RACHAEL\Desktop\WEB CHALLENGES\app.js"></script>  
+</body>
+</html>
