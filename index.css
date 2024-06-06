@@ -622,11 +622,13 @@ html{
      #testimonial img{
       width: 80px;
   height: 80px;
+  top: 18%;
     }
     .navbar-brand{
       display: flex;
       flex-direction: row;
       padding-right: 15px;
+      left: 15%;
     }
 }
 @media (max-width:500px) and (max-width:767px){
