@@ -604,6 +604,12 @@ html{
   margin: -1px;
 }
 @media (max-width:400px){
+  .OffCanvas{
+    width: 80%;
+  }
+  .Title{
+    padding-left: -30px;
+  }
   *{
     margin: 0;
     padding: 0;
