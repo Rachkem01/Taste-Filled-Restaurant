@@ -616,18 +616,18 @@ html{
     grid-template-columns: repeat(1, 1fr);
      }
      #card img{
-      width: 90px;
+      width: 50px;
      
      }
      #testimonial img{
-      left: 25%;
-      top: 20%;
+      left: 7%;
+      top: 18%;
     margin-bottom: 20px;
     }
-    nav{
+    .navbar-brand{
       display: flex;
       flex-direction: row;
-      margin-left: 15px;
+      padding-left: 15px;
     }
 }
 @media (max-width:500px) and (max-width:767px){
