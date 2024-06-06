@@ -600,7 +600,7 @@ html{
   text-align: center;
   margin-top: 30px;
 }
-@media (max-width:400px) and (max-width:767px){
+@media (min-width:400px) and (max-width:767px){
  
  .icon{
   width: 50px;
