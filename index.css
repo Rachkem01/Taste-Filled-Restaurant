@@ -614,9 +614,7 @@ html{
     margin: 0;
     padding: 0;
   }
-  .icon{
-    display: none;
-  }
+  
   #card{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -633,7 +631,7 @@ html{
     .navbar-brand{
       display: flex;
       flex-direction: row;
-      padding-right: 15px;
+      /* padding-right: 15px; */
      
     }
 }
