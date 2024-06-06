@@ -620,14 +620,13 @@ html{
      
      }
      #testimonial img{
-      left: 7%;
-      top: 18%;
-    margin-bottom: 20px;
+      width: 80px;
+  height: 80px;
     }
     .navbar-brand{
       display: flex;
       flex-direction: row;
-      padding-left: 15px;
+      padding-right: 15px;
     }
 }
 @media (max-width:500px) and (max-width:767px){
