@@ -631,12 +631,15 @@ html{
     .navbar-brand{
       display: flex;
       flex-direction: row;
-      /* padding-right: 15px; */
+      justify-content: center;
+      align-items: center;
      
     }
 }
 @media (max-width:500px) and (max-width:767px){
-
+  .navbar-brand span{
+    vertical-align: middle;
+  }
  .icon{
   width: 50px;
   height: 40px;
