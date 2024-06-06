@@ -600,10 +600,13 @@ html{
   text-align: center;
   margin-top: 30px;
 }
-@media (min-width:400px) and (max-width:767px){
- html{
-  margin: 0;
- }
+@media (max-width:400px){
+  .icon{
+    display: none;
+  }
+}
+@media (max-width:500px) and (max-width:767px){
+
  .icon{
   width: 50px;
   height: 40px;
