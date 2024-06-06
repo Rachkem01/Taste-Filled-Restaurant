@@ -634,7 +634,7 @@ html{
       display: flex;
       flex-direction: row;
       padding-right: 15px;
-      left: 15%;
+     
     }
 }
 @media (max-width:500px) and (max-width:767px){
